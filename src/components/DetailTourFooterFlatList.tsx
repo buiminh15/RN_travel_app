@@ -3,7 +3,7 @@ import React from 'react';
 
 const DetailTourFooterFlatList = () => {
   return (
-    <View className="flex-1 gap-4 pb-40">
+    <View className="flex-1 gap-4 pb-40 mt-6">
       <Text className="font-bold text-xl text-blue-950">Description</Text>
       <Text className="text-base">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium

@@ -21,7 +21,7 @@ const GetStartedScreen = () => {
           </Text>
           <Text className="text-base text-slate-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            voluptate aliquid, dolor illo dolore fugiat aut quos architecto
+            voluptate aliquid, dolor illo dolore fugiat
           </Text>
         </View>
 
