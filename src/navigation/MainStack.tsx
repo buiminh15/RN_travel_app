@@ -1,13 +1,20 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import HomeScreen from '../screens/HomeScreen';
+import {DetailTour, GetStartedScreen} from '../screens';
+import {MainStackParamList} from '../types/navigation';
+import BottomTabNavigator from './BottomTabNavigator';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<MainStackParamList>();
 
 const MainStack = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} />
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}>
+      <Stack.Screen name="GetStarted" component={GetStartedScreen} />
+      <Stack.Screen name="MainStack" component={BottomTabNavigator} />
+      <Stack.Screen name="DetailTour" component={DetailTour} />
     </Stack.Navigator>
   );
 };
