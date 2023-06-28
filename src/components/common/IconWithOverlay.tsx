@@ -25,7 +25,7 @@ const IconWithOverlay = (props: IconWithOverlayProps) => {
         name={iconName}
         width={sizeIcon}
         height={sizeIcon}
-        color={colorIcon}
+        fill={colorIcon}
       />
     </TouchableOpacity>
   );

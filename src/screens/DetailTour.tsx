@@ -36,6 +36,7 @@ const DetailTour = () => {
       <View className="absolute top-8 left-5">
         <IconWithOverlay
           iconName="chevron-left"
+          colorIcon="#000"
           onPress={() => navigation.goBack()}
         />
       </View>
@@ -47,6 +48,7 @@ const DetailTour = () => {
         <FlatList
           data={[FACILITIES[0]]}
           showsVerticalScrollIndicator={false}
+          className="pb-10"
           keyExtractor={item => item.id}
           ListHeaderComponent={<DetailTourHeaderFlatList />}
           ListFooterComponent={<DetailTourFooterFlatList />}

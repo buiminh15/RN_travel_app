@@ -41,8 +41,6 @@ const renderItem = ({item}: {item: DataType}) => {
   );
 };
 
-// type Props = NativeStackScreenProps<HomeStackParamList, 'DetailTour'>;
-
 const HomeScreen = () => {
   return (
     <View className="flex-1 px-5 pt-4">

@@ -19,7 +19,11 @@ const TourItem = ({item}: {item: TourType}) => {
           className="w-full h-full object-cover bg-blue rounded-3xl"
         />
         <View className="absolute top-4 right-4">
-          <IconWithOverlay iconName="heart" shape="rounded-2xl" />
+          <IconWithOverlay
+            iconName="heart"
+            shape="rounded-2xl"
+            colorIcon="red"
+          />
         </View>
         <View className="absolute px-3 py-1 -bottom-2 left-4 bg-blue-600 rounded">
           <Text className="text-white uppercase font-bold">Hot</Text>
@@ -44,10 +48,10 @@ const TourItem = ({item}: {item: TourType}) => {
             />
             <View className="h-8 aspect-square rounded-full items-center justify-center -ml-2 bg-blue-500">
               <Icon
-                name="more-horizontal-outline"
+                name="more-horizontal"
                 height={20}
                 width={20}
-                color={'#fff'}
+                fill={'white'}
               />
             </View>
           </View>
