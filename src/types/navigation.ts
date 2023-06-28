@@ -16,6 +16,7 @@ export type MainStackParamList = {
 export type BottomTabNavigatorParamList = {
   HomeStack: NavigatorScreenParams<HomeStackParamList>;
   BookingScreen: undefined;
+  SearchScreen: undefined;
   FavoriteScreen: undefined;
   SettingsScreen: undefined;
 };

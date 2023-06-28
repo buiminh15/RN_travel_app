@@ -1,9 +1,15 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import React from 'react';
 import {Icon} from 'react-native-eva-icons';
-import {BookingScreen, FavoriteScreen, SettingsScreen} from '../screens';
+import {
+  BookingScreen,
+  FavoriteScreen,
+  SearchScreen,
+  SettingsScreen,
+} from '../screens';
 import {BottomTabNavigatorParamList} from '../types/navigation';
 import HomeStackNavigator from './HomeStackNavigator';
+import {View} from 'react-native';
 
 const Tab = createBottomTabNavigator<BottomTabNavigatorParamList>();
 
@@ -31,6 +37,16 @@ const BOTTOM_NAVS: BottomTabsType[] = [
     component: BookingScreen,
     icon: ({color, size}: {color: string; size: number}) => (
       <Icon name="calendar-outline" width={size} height={size} fill={color} />
+    ),
+  },
+  {
+    id: 10,
+    name: 'SearchScreen',
+    component: SearchScreen,
+    icon: ({size}: {size: number}) => (
+      <View className="w-16 aspect-square rounded-full bg-white items-center justify-center">
+        <Icon name="search" width={size} height={size} fill={'#0b182b'} />
+      </View>
     ),
   },
   {
@@ -62,8 +78,6 @@ const BottomTabNavigator = () => {
           position: 'absolute',
           bottom: 10,
           backgroundColor: '#0b182b',
-          // borderTopLeftRadius: 30,
-          // borderTopRightRadius: 30,
           borderRadius: 30,
         },
         tabBarIconStyle: {

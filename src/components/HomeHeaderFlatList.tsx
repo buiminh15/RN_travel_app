@@ -20,7 +20,7 @@ const HomeHeaderFlatList = () => {
         </View>
 
         <View className="flex-row items-center gap-5">
-          <IconWithOverlay iconName="bell" colorIcon="#000" />
+          <IconWithOverlay iconName="bell" colorIcon="#0b182b" />
           <FastImage
             className="w-16 h-16 rounded-full border-4 border-blue-700"
             source={images.profile1}

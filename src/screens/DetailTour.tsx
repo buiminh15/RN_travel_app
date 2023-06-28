@@ -36,7 +36,7 @@ const DetailTour = () => {
       <View className="absolute top-8 left-5">
         <IconWithOverlay
           iconName="chevron-left"
-          colorIcon="#000"
+          colorIcon="#0b182b"
           onPress={() => navigation.goBack()}
         />
       </View>
